@@ -1,3 +1,19 @@
+# From production class git ignore list
+.DS_Store
+.vscode/
+*.zip
+*.csv
+*.xls
+*.xlsx
+*.xlsm
+*.parquet
+*.log
+**/__pycache__/*
+uv.lock
+ds4-env
+.venv
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
