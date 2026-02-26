@@ -62,7 +62,9 @@ deactivate
 ## Modules installed at a later date
 We may need other modules down the line. We could update the list here so everyone on the team could run to get their code working. After running any of the following commands, you may need to run `uv sync --active` and restart your notebook to pick up the changes.
 List of commands for adding modules that are installed at a later date:
+```
 uv add statsmodels
+```
 
 > **👉 Remember**   
 > Only one environment can be active at a time. If you switch to a different repo, first deactivate this one (or just close the terminal) and then activate the new repo’s environment.
