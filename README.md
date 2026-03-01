@@ -4,8 +4,8 @@
 **Table of Content**
 ## Table of Contents
 
-* [Purpose & Overview](#Purpose & Overview)
-* [Research Question](#learning-outcomes)
+* [Purpose & Overview]
+* [Research Question]
 
 *[Purpose & Overview](#Purpose &Overview)
     Research Question
