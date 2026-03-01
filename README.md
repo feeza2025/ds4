@@ -2,12 +2,12 @@
 **Group 4 Data Science Project**
 
 **Table of Content**
-## Contents
+## Table of Contents
 
 * [Overview](#overview)
 * [Learning Outcomes](#learning-outcomes)
 
-*Purpose & Overview
+[Purpose & Overview] (#Purpose &Overview)
     Research Question
 Goals & Objectives
     Industry Context
