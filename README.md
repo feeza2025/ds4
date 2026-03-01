@@ -2,7 +2,7 @@
 **Group 4 Data Science Project**
 
 **Table of Content**
-Purpose & Overview
+*Purpose & Overview
     Research Question
 Goals & Objectives
     Industry Context
