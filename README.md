@@ -4,7 +4,7 @@
 **Table of Content**
 ## Table of Contents
 
-* [Purpose & Overview](#overview)
+* [Purpose & Overview](#Purpose & Overview)
 * [Research Question](#learning-outcomes)
 
 *[Purpose & Overview](#Purpose &Overview)
@@ -22,7 +22,7 @@ Key Results & Findings
 Ideas for Future Analysis
 References
 ---
-**Purpose & Overview**
+##Purpose & Overview
 This project focuses on creating data visualization tools that highlight early-stage patterns of diabetes symptoms to support both patient awareness and clinical decision-making. By transforming symptom data into clear, accessible visual insights, the project aims to empower individuals to better recognize potential warning signs and to provide healthcare providers with intuitive tools to illustrate risk patterns during screening conversations. 
 
 From a business and industry perspective, this work operates within the preventive healthcare and educational health space, where early detection is linked to improved patient outcomes and reduced long-term costs, a strategic priority for providers, insurers, and public health systems. Visualization-driven tools could enhance patient education and strengthen clinical consultations.
