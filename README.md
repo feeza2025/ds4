@@ -109,3 +109,142 @@ A conservative first-year savings estimate could be predicted using our preventi
 **Total ≈ $3,800 per new diabetes case**
 
 **Savings formula:**
+Savings ≈ (cases prevented) × C$3,800
+## Techniques & Technologies
+
+**Dataset Used**:  
+https://archive.ics.uci.edu/dataset/529/early+stage+diabetes+risk+prediction+dataset  
+
+Dataset contains **520 records and 16 features**.
+
+---
+
+### Methodology
+
+1. **Data Audit**
+   - Check for missing values  
+   - Duplicate rows  
+   - Data types  
+   - Impossible values  
+
+2. **Data Cleaning**
+   - Standardize categorical variables  
+   - Yes → 1  
+   - No → 0  
+   - Positive diabetes → 1  
+   - Negative diabetes → 0  
+
+3. Feature engineering for prevention insights  
+   - Create age groups  
+   - Create symptom count  
+
+4. Multicollinearity check  
+
+5. Exploratory Analysis  
+   - Visualization of age, gender, symptoms  
+
+6. Prevention analytics models investigated:
+   - Logistic Regression  
+   - Random Forest classification  
+   - K-Mode clustering  
+
+7. Identify top predictors using:
+   - Correlation  
+   - SHAP values  
+
+8. Validation
+   - Train/test split  
+
+9. Visualization outputs:
+   - SHAP explainability  
+   - Age risk curve  
+   - Accessibility-ready visuals  
+   - Network correlation  
+
+10. Recommendations to primary care providers and public health organizations  
+
+---
+
+## Key Contacts (alphabetical by first name)
+
+- Brianna Lowe  
+- Ceilia Leung  
+- Hema Dawonauth  
+- Patricia Rabel  
+- Saranjeet Singh  
+- Shafeeza Hussain  
+
+---
+
+## Schedule
+
+### Week 1
+
+**Day 1 — February 24**  
+- Meet team  
+- Review dataset  
+- Discuss research problem  
+
+**Day 2 — February 25**  
+- Review additional datasets  
+- Discuss real-world applications  
+
+**Day 3 — February 26**  
+- Complete first draft of README  
+- Confirm research questions  
+- Determine next steps  
+
+**Weekend Work**
+
+- Hema & Shafeeza: visualization, modelling, cleaning  
+- Patricia & Brianna: README and business case  
+- Hema: financial KPIs  
+- Group: research health visualizations  
+- Review K-means applicability  
+
+---
+
+### Week 2
+
+**Day 4 — March 3**  
+TBD  
+
+**Day 5 — March 4**  
+TBD  
+
+**Day 6 — March 5**  
+- Prepare PowerPoint  
+- Align on final presentation  
+- Dry run  
+
+**Final Presentation — March 7**
+
+---
+
+## Limitations
+
+- Dataset is from patients in Bangladesh; symptoms may vary by region, climate, or population.  
+- Limited sample size when segmented by age.  
+- No information on symptom severity (e.g., mild vs severe).  
+- Some negative cases may include prediabetes or very early diabetes.  
+
+---
+
+## Key Results & Findings
+
+TBD
+
+---
+
+## Ideas for Future Analyzes (things we would have done if we had more time)
+
+TBD
+
+---
+
+## References
+
+1. https://www.yorku.ca/science/mathstats/acadic/diabetes-in-toronto/  
+2. https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.1029358/full  
+3. https://www.researchgate.net/publication/356828945_Use_of_Machine_Learning_Techniques_to_Predict_Diabetes_at_an_Early_Stage  
+4. https://www.ices.on.ca/publications/journal-articles/impact-of-diabetes-on-healthcare-costs-in-a-population-based-cohort-a-cost-analysis  
