@@ -7,7 +7,7 @@
 * [Overview](#overview)
 * [Learning Outcomes](#learning-outcomes)
 
-[Purpose & Overview] (#Purpose &Overview)
+*[Purpose & Overview](#Purpose &Overview)
     Research Question
 Goals & Objectives
     Industry Context
