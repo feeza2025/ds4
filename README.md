@@ -2,6 +2,11 @@
 **Group 4 Data Science Project**
 
 **Table of Content**
+## Contents
+
+* [Overview](#overview)
+* [Learning Outcomes](#learning-outcomes)
+
 *Purpose & Overview
     Research Question
 Goals & Objectives
