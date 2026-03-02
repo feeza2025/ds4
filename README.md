@@ -167,7 +167,7 @@ Dataset contains **520 records and 16 features**.
 ## Key Contacts (alphabetical by first name)
 
 - Brianna Lowe  
-- Ceilia Leung  
+- Cecilia Leung 
 - Hema Dawonauth  
 - Patricia Rabel  
 - Saranjeet Singh  
