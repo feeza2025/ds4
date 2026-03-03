@@ -64,6 +64,11 @@ We may need other modules down the line. We could update the list here so everyo
 List of commands for adding modules that are installed at a later date:
 ```
 uv add statsmodels
+uv add prince
+uv add graphviz
+uv add dtreeviz
+uv add kmodes
+uv add xgboost 
 ```
 
 > **👉 Remember**   
