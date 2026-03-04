@@ -14,7 +14,7 @@
   - [Methodology](#methodology)
 - [Key Contacts](#key-contacts-alphabetical-by-first-name)
 - [Schedule](#schedule)
-- [Limitations](#limitations)
+- [Limitations & Mitigations Strategies](#limitations)
 - [Key Results & Findings](#key-results--findings)
 - [Ideas for Future Analysis](#ideas-for-future-analyzes-things-we-would-have-done-if-we-had-more-time)
 - [References](#references)
@@ -220,12 +220,23 @@ TBD
 
 ---
 
-## Limitations
+## Limitations & Mitigation Strategies
 
-- Dataset is from patients in Bangladesh; symptoms may vary by region, climate, or population.  
-- Limited sample size when segmented by age.  
-- No information on symptom severity (e.g., mild vs severe).  
-- Some negative cases may include prediabetes or very early diabetes.  
+1. Dataset is from patients in Bangladesh; symptoms may vary by region or population.
+ Risk: Findings may not generalize to Canadian or North American populations.
+ Mitigation: Frame insights as exploratory and pattern-based rather than universal predictors. Compare findings to Canadian epidemiology literature to validate directional trends.
+2. Limited sample size (520 records), especially when segmented by age groups.
+ Risk: Reduced statistical reliability in subgroup analysis.
+ Mitigation: Use broader age group bins to maintain statistical power. Avoid over-segmentation and clearly label findings as indicative, not definitive.
+3. No data on symptom severity (binary only).
+ Risk: Cannot differentiate between mild vs. clinically significant symptom presentation.
+ Mitigation: Focus analysis on symptom accumulation and co-occurrence patterns rather than intensity. Highlight this as a future dataset enhancement opportunity.
+4. Possible misclassification (negative cases may include prediabetes).
+ Risk: Blurs diagnostic boundary.
+ Mitigation: Treat outcome variable as “diagnosed vs. not diagnosed” rather than definitive absence of disease. Include disclaimer in findings. 
+5. Gender Distribution Imbalance
+Risk: The dataset contains 328 males (63%) and 192 females (37%), so findings based on females are derived from a smaller sample. This may reduce the stability of percentage comparisons and limit the reliability of gender-specific conclusions.
+Mitigation: We will report the gender distribution transparently, use proportional comparisons rather than raw counts, and interpret female-specific trends with caution, framing them as exploratory rather than definitive.
 
 ---
 
