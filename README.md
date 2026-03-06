@@ -48,7 +48,7 @@ What are the top predictors based on gender and age groups that can identify ind
 2. Identify and visually communicate symptom patterns associated with diabetes diagnosis.  
 3. Support preventive healthcare efforts by illustrating risk trends without relying on predictive modeling (TBD).  
 4. Bridge the gap between patient-reported symptoms and clinical screening conversations.  
-5. Demonstrate the strategic value of visualization in public health and educational health contexts.  
+5. Demonstrate the strategic value of data visualization in public health and patient education contexts.
 
 ### Project Objectives
 
@@ -246,9 +246,10 @@ TBD
 
 ---
 
-## Ideas for Future Analyzes (things we would have done if we had more time)
-
-TBD
+## Ideas for Future Analyses (things we would have done if we had more time)
+- Expand the dataset to include patients from additional geographic regions to assess whether symptom patterns remain consistent across populations.
+- Incorporate additional clinical variables (e.g., BMI, blood glucose levels, family history) to improve risk identification.
+- Develop an interactive dashboard or simple risk scoring tool to help visualize symptom-based risk patterns for patients and clinicians.
 
 ---
 
