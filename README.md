@@ -116,7 +116,7 @@ Earlier intervention has the potential to:
 
 ## Techniques & Technologies
 
-**Dataset Used**:  
+### Dataset Used  
 https://archive.ics.uci.edu/dataset/529/early+stage+diabetes+risk+prediction+dataset  
 
 Dataset contains **520 records and 16 features**.
@@ -141,29 +141,27 @@ Libraries Used:
 
 2. **Data Cleaning**
    - Standardize categorical variables  
-   - Yes → 1  
-   - No → 0  
-   - Positive diabetes → 1  
-   - Negative diabetes → 0  
+     - Yes → 1  
+     - No → 0  
+     - Positive diabetes → 1  
+     - Negative diabetes → 0  
 
-   Feature engineering for prevention insights  
-   - Create age groups  
-   - Create symptom count  
+   - Multicollinearity check  
 
-   Multicollinearity check  
-
-3. Exploratory Data Analysis  
+3. **Exploratory Data Analysis**  
    we explored patterns in the dataset to decide which visuals are most meaningful.
    This includes looking at:
 
     - distribution of age
     - symptom frequency
     - differences by gender
+
    This stage helped identify which messages the visuals should communicate. 
 
-4. Model-based visualization 
+4. **Model-based visualization** 
+   
    Models were developed, trained and tested. Visuals were created using outputs from predictive models.
-     -logistic regression was used to estimate diabetes probability by age
+     - logistic regression was used to estimate diabetes probability by age
 
      ![alt text](image.png)
 
@@ -171,30 +169,31 @@ Libraries Used:
 
 
 
-     -feature importance visuals from machine learning models ( Random Forest and Logistic Regression)
+     - feature importance visuals from machine learning models ( Random Forest and Logistic Regression)
 
       ![alt text](image-1.png)
 
-     -risk prediction visuals for screening and prevention use
-     -confusion matrix for evaluating models
+     - risk prediction visuals for screening and prevention use
+     - confusion matrix for evaluating models
      | Metric   | Logistic Regression | Decision Tree Classifier | Random Forest |
      |----------|---------------------|--------------------------|---------------|
      | Log Loss | 0.1535              | 2.4381                   | 0.2450        |
 
       
-5. Visualization Design
+5. **Visualization Design**
 
   Once the patterns were known, we chose the chart type that best fits the message.
    - line graphs for age vs diabetes risk
    - bar graph for comparing gender, age and symptoms
    
 
-6. Communication
-   After generating the charts, the final step was to decide how to communicate the message to the intended audience.
+6. **Communication**
+
+   After generating the charts, the final step was to decide how to communicate the message to the intended audience. We chose to use flyers as our communication medium.
    For our project, the visuals were meant to support:
-   -public awareness
-   -prevention messaging
-  and we chose to create a flyer to convey our message
+   - public awareness
+   - prevention messaging
+  
 ---
 
 ## Key Contacts (alphabetical by first name)
@@ -220,7 +219,7 @@ Libraries Used:
 
 ### Weekend Work
 
-| Team Members | Tasks |
+| Team Members | Activities |
 |--------------|------|
 | Hema & Shafeeza | Visualization, modeling, and data cleaning |
 | Patricia & Brianna | README writing and business case |
@@ -235,28 +234,20 @@ Libraries Used:
 | Day 4 | Mar 3 | Review visualizations created by team members and evaluate simplicity and call-to-action. Review flyer content |
 | Day 5 | Mar 4 | Finalize visualizations and update flyer |
 | Day 6 | Mar 5 | Prepare PowerPoint presentation, align on final presentation, conduct dry run |
-| Final Presentation | Mar 7 | Present final project |
+| Day 8 | Mar 7 | Present final project |
 
 ---
 
 ## Limitations & Mitigation Strategies
 
-1. Dataset is from patients in Bangladesh; symptoms may vary by region or population.
- Risk: Findings may not generalize to Canadian or North American populations.
- Mitigation: Frame insights as exploratory and pattern-based rather than universal predictors. Compare findings to Canadian epidemiology literature to validate directional trends.
-2. Limited sample size (520 records), especially when segmented by age groups.
- Risk: Reduced statistical reliability in subgroup analysis.
- Mitigation: Use broader age group bins to maintain statistical power. Avoid over-segmentation and clearly label findings as indicative, not definitive.
-3. No data on symptom severity (binary only).
- Risk: Cannot differentiate between mild vs. clinically significant symptom presentation.
- Mitigation: Focus analysis on symptom accumulation and co-occurrence patterns rather than intensity. Highlight this as a future dataset enhancement opportunity.
-4. Possible misclassification (negative cases may include prediabetes).
- Risk: Blurs diagnostic boundary.
- Mitigation: Treat outcome variable as “diagnosed vs. not diagnosed” rather than definitive absence of disease. Include disclaimer in findings. 
-5. Gender Distribution Imbalance
-Risk: The dataset contains 328 males (63%) and 192 females (37%), so findings based on females are derived from a smaller sample. This may reduce the stability of percentage comparisons and limit the reliability of gender-specific conclusions.
-Mitigation: We will report the gender distribution transparently, use proportional comparisons rather than raw counts, and interpret female-specific trends with caution, framing them as exploratory rather than definitive.
 
+| Limitation | Risk | Mitigation |
+|------------|------|------------|
+| Dataset is from patients in Bangladesh; symptoms may vary by region or population. | Findings may not generalize to Canadian or North American populations. | Frame insights as exploratory and pattern-based rather than universal predictors. Compare findings with Canadian epidemiology literature to validate directional trends. |
+| Limited sample size (520 records), especially when segmented by age groups. | Reduced statistical reliability in subgroup analysis. | Use broader age group bins to maintain statistical power. Avoid over-segmentation and clearly label findings as indicative rather than definitive. |
+| No data on symptom severity (binary only). | Cannot differentiate between mild vs. clinically significant symptom presentation. | Focus analysis on symptom accumulation and co-occurrence patterns rather than intensity. Highlight this as a future dataset enhancement opportunity. |
+| Possible misclassification (negative cases may include prediabetes). | Blurs diagnostic boundary between diabetic and non-diabetic individuals. | Treat the outcome variable as “diagnosed vs. not diagnosed” rather than definitive absence of disease and include a disclaimer in findings. |
+| Gender distribution imbalance (328 males – 63%, 192 females – 37%). | Female-based insights may be less statistically stable due to smaller sample size. | Report gender distribution transparently, use proportional comparisons rather than raw counts, and interpret female-specific trends as exploratory. |
 ---
 
 ## Key Results & Findings
@@ -265,46 +256,46 @@ Mitigation: We will report the gender distribution transparently, use proportion
 
 1. Logistic Regression performed much better than Decision Tree
 
-Logistic Regression Log Loss: 0.1535
+   Logistic Regression Log Loss: 0.1535
 
-Decision Tree Classifier Log Loss: 2.4381
+   Decision Tree Classifier Log Loss: 2.4381
 
-This suggests Logistic Regression model was far more reliable and better calibrated for predicting diabetes risk on this dataset. Lower log loss is better, so this is a strong result.
+   This suggests Logistic Regression model was far more reliable and better calibrated for predicting diabetes risk on this dataset. Lower log loss is better, so this is a strong result.
 
 2. Age was an important risk factor
-A big part of our project focused on Age vs Predicted Diabetes Risk, and the modeling showed that:
+   A big part of our project focused on Age vs Predicted Diabetes Risk, and the modeling showed that:
 
- - diabetes risk tends to increase with age
+   - diabetes risk tends to increase with age
 
- - ages 40+ are a meaningful screening group
+   - ages 40+ are a meaningful screening group
 
-- ages 50+ appear to fall into a higher-risk zone in your visual framing
+  - ages 50+ appear to fall into a higher-risk zone in your visual framing
 
-That makes age a useful variable for public-facing prevention messaging and clinic screening visuals.
+  That makes age a useful variable for public-facing prevention messaging and clinic screening visuals.
 
 3. The project identified symptom-based predictors that are clinically useful
-We explored:
+   We explored:
 
-- symptom frequency
+  - symptom frequency
 
-- feature importance
+  - feature importance
 
-- top predictors of diabetes
+  - top predictors of diabetes
 
-From the structure of this diabetes dataset, the project likely showed that a combination of age plus symptom indicators provides strong predictive value. The most useful predictors are the kinds of features that can support early screening and prevention outreach.
+  From the structure of this diabetes dataset, the project likely showed that a combination of age plus symptom indicators provides strong predictive value. The most useful predictors are the kinds of features that can support early screening and prevention outreach.
 
 4. The dataset is suitable for prevention-oriented risk stratification
-Our analysis direction showed that the dataset can be used to:
+   Our analysis direction showed that the dataset can be used to:
 
-- identify higher-risk adults
+  - identify higher-risk adults
 
-- estimate risk by age group
+  - estimate risk by age group
 
-- support public awareness campaigns
+  - support public awareness campaigns
 
-- build simple screening visuals for clinics and public healthcare settings
+  - build simple screening visuals for clinics and public healthcare settings
 
-So the project is not just predictive; it is also actionable for prevention.
+  So the project is not just predictive; it is also actionable for prevention.
 
 ---
 
