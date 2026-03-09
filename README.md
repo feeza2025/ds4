@@ -182,7 +182,7 @@ Libraries Used:
     
     The notebook is reproducible with np.random.seed(42).
 
-     - Three models were implemented and evaluated. Here is the evaluation result for Log Loss and ROC AUC score. Please be noted that ROC AUC evaluation was added after the presentation showcase.
+     - Three models were implemented and evaluated. Here is the evaluation result for Log Loss and ROC AUC score. Please note that ROC AUC evaluation was added after the presentation showcase.
 
         | Metric   | Logistic Regression | Decision Tree Classifier | Random Forest Classifer |
         |----------|---------------------|--------------------------|-------------------------|
