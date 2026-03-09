@@ -175,6 +175,7 @@ Libraries Used:
 
      - risk prediction visuals for screening and prevention use
      - confusion matrix for evaluating models
+     
      | Metric   | Logistic Regression | Decision Tree Classifier | Random Forest |
      |----------|---------------------|--------------------------|---------------|
      | Log Loss | 0.1535              | 2.4381                   | 0.2450        |
