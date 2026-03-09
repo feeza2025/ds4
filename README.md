@@ -282,8 +282,6 @@ Libraries Used:
 
 ## Key Results & Findings
 
-**Key results**
-
 1. Random Forest performed much better than Logistic Regression
 
    Logistic Regression Log Loss: 0.1535
@@ -299,7 +297,7 @@ Libraries Used:
 
   - ages 40+ are a meaningful screening group
 
-  - ages 50+ appear to fall into a higher-risk zone in your visual framing
+  - ages 50+ appear to fall into a higher-risk zone in the visual framing
 
   That makes age a useful variable for public-facing prevention messaging and clinic screening visuals.
 
@@ -314,7 +312,7 @@ Libraries Used:
 
   From the structure of this diabetes dataset, the project likely showed that a combination of age plus symptom indicators provides strong predictive value. The most useful predictors are the kinds of features that can support early screening and prevention outreach.
 
-4. The dataset is suitable for prevention-oriented risk stratification
+4. The dataset is suitable for prevention-oriented risk stratification.
    Our analysis direction showed that the dataset can be used to:
 
   - identify higher-risk adults
