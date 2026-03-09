@@ -175,13 +175,41 @@ Libraries Used:
       ![alt text](image-1.png)
 
      - risk prediction visuals for screening and prevention use
-     - confusion matrix for evaluating models
 
-     | Metric   | Logistic Regression | Decision Tree Classifier | Random Forest |
-     |----------|---------------------|--------------------------|---------------|
-     | Log Loss | 0.1535              | 2.4381                   | 0.068       |
+    **Code reproducibility**
+    
+    Please run notebook https://github.com/feeza2025/ds4/blob/main/01_activities/dataset_modelling_all.ipynb. 
+    
+    The notebook is reproducible with np.random.seed(42).
+
+     - Three models were implemented and evaluated. Here is the evaluation result for Log Loss and ROC AUC score. Please note that ROC AUC evaluation was added after the presentation showcase.
+
+        | Metric   | Logistic Regression | Decision Tree Classifier | Random Forest Classifer |
+        |----------|---------------------|--------------------------|-------------------------|
+        | Log Loss | 0.1535              | 2.4381                   | 0.068                   |
+        | ROC AUC  | 0.9906              | 0.9350                   | 0.9988                  |
+
+        Confusion Matrix could also be seen in the notebook
+
+      - The following findings from this analysis were presented in our flyer:
+        - list of top 5 symptoms
+
+          Top 5 Symptoms
+
+            - Polydipsia            85.370
+            - Polyuria              79.050
+            - delayed healing       50.925
+            - Obesity               47.975
+            - visual blurring       46.460
 
       
+        This chart from the notebook was used in the flyer under the 'Diabetes Risk by Age, Gender & Symptoms' section
+
+        ![alt text](image_2_key_symptoms.png)
+
+    
+    - Other findings (in the form of bar graphs) and further model analysis (explainability) could also be found in: https://github.com/feeza2025/ds4/blob/main/01_activities/dataset_modelling_all.ipynb
+        
 5. **Visualization Design**
 
   Once the patterns were known, we chose the chart type that best fits the message.
