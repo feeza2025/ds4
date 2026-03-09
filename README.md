@@ -193,7 +193,6 @@ Libraries Used:
 
       - The following findings from this analysis were presented in our flyer:
         - list of top 5 symptoms
-        - chart and finding under the Diabetes Risk by Age, Gender & Symptoms
 
           Top 5 Symptoms
 
@@ -204,13 +203,12 @@ Libraries Used:
             - visual blurring       46.460
 
       
-
-        Chart under the 'Diabetes Risk by Age, Gender & Symptoms' section in the flyer
+        This chart from the notebook was used in the flyer under the 'Diabetes Risk by Age, Gender & Symptoms' section
 
         ![alt text](image_2_key_symptoms.png)
 
     
-    - Other findings and further model analysis (explainability) could also be found in: https://github.com/feeza2025/ds4/blob/main/01_activities/dataset_modelling_all.ipynb
+    - Other findings (in the form of bar graphs) and further model analysis (explainability) could also be found in: https://github.com/feeza2025/ds4/blob/main/01_activities/dataset_modelling_all.ipynb
         
 5. **Visualization Design**
 
