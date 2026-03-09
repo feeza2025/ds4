@@ -1,11 +1,11 @@
 # From production class git ignore list
 .DS_Store
 .vscode/
-*.zip
-*.csv
-*.xls
-*.xlsx
-*.xlsm
+#*.zip
+#*.csv
+#*.xls
+#*.xlsx
+#*.xlsm
 *.parquet
 *.log
 **/__pycache__/*
