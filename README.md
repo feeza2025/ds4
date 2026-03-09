@@ -46,7 +46,7 @@ What are the top predictors based on gender and age groups that can identify ind
 
 1. Increase awareness of early-stage diabetes symptoms through clear and accessible data visualization.  
 2. Identify and visually communicate symptom patterns associated with diabetes diagnosis.  
-3. Support preventive healthcare efforts by illustrating risk trends without relying on predictive modeling (TBD).  
+3. Support preventive healthcare efforts by illustrating risk trends relying on predictive modeling.  
 4. Bridge the gap between patient-reported symptoms and clinical screening conversations.  
 5. Demonstrate the strategic value of data visualization in public health and patient education contexts.
 
@@ -54,7 +54,7 @@ What are the top predictors based on gender and age groups that can identify ind
 
 1. Clean and transform the Early-Stage Diabetes Risk dataset for visual analysis.  
 2. Compare symptom prevalence between diagnosed and non-diagnosed individuals.  
-3. Visualize symptom clustering and co-occurrence patterns (TBD).  
+3. Visualize symptom clustering and co-occurrence patterns.  
 4. Illustrate the relationship between symptom accumulation and diagnosis rate.  
 5. Explore demographic context (e.g., age, obesity) in relation to diagnosis.  
 6. Develop clear, interpretable charts that prioritize insight over visual complexity.  
@@ -97,18 +97,22 @@ Earlier intervention has the potential to:
 
 ### 💰 Estimated Economic Value
 
-A conservative first-year savings estimate could be predicted using our prevention savings model:
+A conservative first-year savings estimate for ontario could be predicted using our cost savings prevention model:
 
-**Estimated cost split (Year 1 per case):**
+**Ontario 40+ Prevention Model (Annual)**
+Ontario population (40+): 7,800,000
+Program uptake: 20% -> participants: 1,560,000
+Baseline expected cases (40+): 4,855,839
+Assuming 10% relative reduction in diabetes risk among participants
+Cases avoided (annual): 97,117
+Baseline cost ( hospitalizations,Dialysis,Cardiovascular): $14,567,517,869
+Program cost: $93,600,000
+Post (after program) total cost: $14,369,767,512
+Gross savings (healthcare only): $291,350,357
+Net savings (after program cost): $197,750,357
+ROI (net_savings / program_cost): 2.11x
 
-- Hospital: $2,000–$2,400  
-- Medications/devices: $600–$950  
-- Physician/other: $350–$1,200  
 
-**Total ≈ $3,800 per new diabetes case**
-
-**Savings formula:**
-Savings ≈ (cases prevented) × C$3,800
 ## Techniques & Technologies
 
 **Dataset Used**:  
@@ -116,7 +120,15 @@ https://archive.ics.uci.edu/dataset/529/early+stage+diabetes+risk+prediction+dat
 
 Dataset contains **520 records and 16 features**.
 
----
+### Technical Stack
+Programming Language: Python
+
+Libraries Used:
+-Numpy: matrix operations
+-Pandas: data analysis
+-Matplotlib: creating graphs and plots
+-Seaborn: enhancing matplotlib plots
+-SKLearn: regression analysis
 
 ### Methodology
 
@@ -133,35 +145,56 @@ Dataset contains **520 records and 16 features**.
    - Positive diabetes → 1  
    - Negative diabetes → 0  
 
-3. Feature engineering for prevention insights  
+   Feature engineering for prevention insights  
    - Create age groups  
    - Create symptom count  
 
-4. Multicollinearity check  
+   Multicollinearity check  
 
-5. Exploratory Analysis  
-   - Visualization of age, gender, symptoms  
+3. Exploratory Data Analysis  
+   we explored patterns in the dataset to decide which visuals are most meaningful.
+   This includes looking at:
 
-6. Prevention analytics models investigated:
-   - Logistic Regression  
-   - Random Forest classification  
-   - K-Mode clustering  
+    -distribution of age
+    -symptom frequency
+    -differences by gender
+   This stage helped identify which messages the visuals should communicate. 
 
-7. Identify top predictors using:
-   - Correlation  
-   - SHAP values  
+4. Model-based visualization 
+   Models were developed, trained and tested. Visuals were created using outputs from predictive models.
+     -logistic regression to estimate diabetes probability by age
 
-8. Validation
-   - Train/test split  
+     ![alt text](image.png)
 
-9. Visualization outputs:
-   - SHAP explainability  
-   - Age risk curve  
-   - Accessibility-ready visuals  
-   - Network correlation  
 
-10. Recommendations to primary care providers and public health organizations  
 
+
+
+     -feature importance visuals from machine learning models (explainability)
+
+      ![alt text](image-1.png)
+
+     -risk prediction visuals for screening and prevention use
+     -confusion matrix for evaluating models
+     | Metric   | Logistic Regression | Decision Tree Classifier | Random Forest |
+     |----------|---------------------|--------------------------|---------------|
+     | Log Loss | 0.1535              | 2.4381                   | 0.2450        |
+
+      
+5. Visualization Design
+  Visualization design
+  Once the patterns are known, we chose the chart type that best fits the message.
+   -line graphs for age vs diabetes risk
+   -bar graph for comparing gender, age and symptoms
+   -top predictors
+
+
+6. Communication
+   After generating the charts, the final step was to decide how to communicate the message to the intended audience.
+   For our project, the visuals were meant to support:
+   -public awareness
+   -prevention messaging
+  and we chose to create a flyer to convey our message
 ---
 
 ## Key Contacts (alphabetical by first name)
@@ -206,13 +239,15 @@ Dataset contains **520 records and 16 features**.
 ### Week 2
 
 **Day 4 — March 3**  
-TBD  
+ Review the different visuals each of us created and which ones seems to address our needs of simplicity and call to action 
+ Review the contents of the Flyer 
 
 **Day 5 — March 4**  
-TBD  
+Review and finalise the Visualization
+Review the Flyer and make required changes  
 
 **Day 6 — March 5**  
-- Prepare PowerPoint  
+- Prepare PowerPoint presentation 
 - Align on final presentation  
 - Dry run  
 
@@ -242,14 +277,59 @@ Mitigation: We will report the gender distribution transparently, use proportion
 
 ## Key Results & Findings
 
-TBD
+Key results
+
+1. Logistic Regression performed much better than Decision Tree
+
+Logistic Regression Log Loss: 0.1535
+
+Decision Tree Classifier Log Loss: 2.4381
+
+This suggests Logistic Regression model was far more reliable and better calibrated for predicting diabetes risk on this dataset. Lower log loss is better, so this is a strong result.
+
+2. Age was an important risk factor
+A big part of our project focused on Age vs Predicted Diabetes Risk, and the modeling showed that:
+
+diabetes risk tends to increase with age
+
+ages 40+ are a meaningful screening group
+
+ages 50+ appear to fall into a higher-risk zone in your visual framing
+
+That makes age a useful variable for public-facing prevention messaging and clinic screening visuals.
+
+3. The project identified symptom-based predictors that are clinically useful
+We explored:
+
+symptom frequency
+
+feature importance
+
+correlation/network visuals
+
+top predictors of diabetes
+
+From the structure of this diabetes dataset, the project likely showed that a combination of age plus symptom indicators provides strong predictive value. The most useful predictors are the kinds of features that can support early screening and prevention outreach.
+
+4. The dataset is suitable for prevention-oriented risk stratification
+Our analysis direction showed that the dataset can be used to:
+
+identify higher-risk adults
+
+estimate risk by age group
+
+support public awareness campaigns
+
+build simple screening visuals for clinics and public healthcare settings
+
+So the project is not just predictive; it is also actionable for prevention.
 
 ---
 
 ## Ideas for Future Analyses (things we would have done if we had more time)
 - Expand the dataset to include patients from additional geographic regions to assess whether symptom patterns remain consistent across populations.
 - Incorporate additional clinical variables (e.g., BMI, blood glucose levels, family history) to improve risk identification.
-- Develop an interactive dashboard or simple risk scoring tool to help visualize symptom-based risk patterns for patients and clinicians.
+- Develop an interactive dashboard or Diabetes risk screening tool to help visualize symptom-based risk patterns for patients and clinicians.
 
 ---
 
