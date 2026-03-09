@@ -17,6 +17,7 @@
 - [Limitations & Mitigations Strategies](#limitations)
 - [Key Results & Findings](#key-results--findings)
 - [Ideas for Future Analysis](#ideas-for-future-analyzes-things-we-would-have-done-if-we-had-more-time)
+- [Team Videos](#team-videos)
 - [References](#references)
 
 ---
@@ -175,10 +176,10 @@ Libraries Used:
 
      - risk prediction visuals for screening and prevention use
      - confusion matrix for evaluating models
-     
+
      | Metric   | Logistic Regression | Decision Tree Classifier | Random Forest |
      |----------|---------------------|--------------------------|---------------|
-     | Log Loss | 0.1535              | 2.4381                   | 0.2450        |
+     | Log Loss | 0.1535              | 2.4381                   | 0.068       |
 
       
 5. **Visualization Design**
@@ -255,20 +256,20 @@ Libraries Used:
 
 **Key results**
 
-1. Logistic Regression performed much better than Decision Tree
+1. Random Forest performed much better than Logistic Regression
 
    Logistic Regression Log Loss: 0.1535
 
-   Decision Tree Classifier Log Loss: 2.4381
+   Random Forest Log Loss: 0.068
 
-   This suggests Logistic Regression model was far more reliable and better calibrated for predicting diabetes risk on this dataset. Lower log loss is better, so this is a strong result.
+   This suggests Random Forest Regression model was far more reliable and better calibrated for predicting diabetes risk on this dataset. Lower log loss is better, so this is a strong result.
 
 2. Age was an important risk factor
    A big part of our project focused on Age vs Predicted Diabetes Risk, and the modeling showed that:
 
-   - diabetes risk tends to increase with age
+  - diabetes risk tends to increase with age
 
-   - ages 40+ are a meaningful screening group
+  - ages 40+ are a meaningful screening group
 
   - ages 50+ appear to fall into a higher-risk zone in your visual framing
 
