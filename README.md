@@ -330,16 +330,24 @@ Libraries Used:
 ---
 
 ## Ideas for Future Analyses (things we would have done if we had more time)
-- Expand the dataset to include patients from additional geographic regions to assess whether symptom patterns remain consistent across populations.
+- Expand the dataset to include patients from additional geographic regions, ethnic backgrounds to assess whether symptom patterns remain consistent across populations.
 - Incorporate additional clinical variables (e.g., BMI, blood glucose levels, family history) to improve risk identification.
 - Develop an interactive dashboard or Diabetes risk screening tool to help visualize symptom-based risk patterns for patients and clinicians.
 
 ---
 ## Team Videos
 
+- Brianna Lowe  
+- Cecilia Leung 
+- Hema Dawonauth  
+- Patricia Rabel: https://drive.google.com/file/d/1sXnIDQSSenlN2sIaFT1AQXi3KmkgTHQC/view?usp=sharing
+- Saranjeet Singh  
+- Shafeeza Hussain  
+
 ## References
 
 1. https://www.yorku.ca/science/mathstats/acadic/diabetes-in-toronto/  
 2. https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.1029358/full  
 3. https://www.researchgate.net/publication/356828945_Use_of_Machine_Learning_Techniques_to_Predict_Diabetes_at_an_Early_Stage  
-4. https://www.ices.on.ca/publications/journal-articles/impact-of-diabetes-on-healthcare-costs-in-a-population-based-cohort-a-cost-analysis  
+4. https://www.ices.on.ca/publications/journal-articles/impact-of-diabetes-on-healthcare-costs-in-a-population-based-cohort-a-cost-analysis
+5. https://www.diabetes.ca/media-room/press-releases/new-data-shows-diabetes-rates-and-economic-burden-on-families-continue-to-rise-in-ontario-- 
