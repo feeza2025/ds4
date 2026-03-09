@@ -290,7 +290,7 @@ Libraries Used:
 
    This suggests Random Forest Regression model was far more reliable and better calibrated for predicting diabetes risk on this dataset. Lower log loss is better, so this is a strong result.
 
-2. Age was an important risk factor
+2. Age was an important risk factor.
    A big part of our project focused on Age vs Predicted Diabetes Risk, and the modeling showed that:
 
   - diabetes risk tends to increase with age
@@ -301,7 +301,7 @@ Libraries Used:
 
   That makes age a useful variable for public-facing prevention messaging and clinic screening visuals.
 
-3. The project identified symptom-based predictors that are clinically useful
+3. The project identified symptom-based predictors that are clinically useful.
    We explored:
 
   - symptom frequency
