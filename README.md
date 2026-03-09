@@ -95,22 +95,23 @@ Earlier intervention has the potential to:
 
 ---
 
-### 💰 Estimated Economic Value
+## 💰 Estimated Economic Value
 
-A conservative first-year savings estimate for ontario could be predicted using our cost savings prevention model:
+### Ontario 40+ Prevention Model (Annual)
 
-**Ontario 40+ Prevention Model (Annual)**
-Ontario population (40+): 7,800,000
-Program uptake: 20% -> participants: 1,560,000
-Baseline expected cases (40+): 4,855,839
-Assuming 10% relative reduction in diabetes risk among participants
-Cases avoided (annual): 97,117
-Baseline cost ( hospitalizations,Dialysis,Cardiovascular): $14,567,517,869
-Program cost: $93,600,000
-Post (after program) total cost: $14,369,767,512
-Gross savings (healthcare only): $291,350,357
-Net savings (after program cost): $197,750,357
-ROI (net_savings / program_cost): 2.11x
+| Metric | Value |
+|------|------|
+| Ontario population (40+) | 7,800,000 |
+| Program uptake | 20% |
+| Participants | 1,560,000 |
+| Baseline expected cases | 4,855,839 |
+| Cases avoided | 97,117 |
+| Baseline healthcare cost | $14,567,517,869 |
+| Program cost | $93,600,000 |
+| Post-program cost | $14,369,767,512 |
+| Gross healthcare savings | $291,350,357 |
+| Net savings | $197,750,357 |
+| ROI | **2.11x** |
 
 
 ## Techniques & Technologies
@@ -124,11 +125,11 @@ Dataset contains **520 records and 16 features**.
 Programming Language: Python
 
 Libraries Used:
--Numpy: matrix operations
--Pandas: data analysis
--Matplotlib: creating graphs and plots
--Seaborn: enhancing matplotlib plots
--SKLearn: regression analysis
+- Numpy: matrix operations
+- Pandas: data analysis
+- Matplotlib: creating graphs and plots
+- Seaborn: enhancing matplotlib plots
+- SKLearn: regression analysis
 
 ### Methodology
 
@@ -155,14 +156,14 @@ Libraries Used:
    we explored patterns in the dataset to decide which visuals are most meaningful.
    This includes looking at:
 
-    -distribution of age
-    -symptom frequency
-    -differences by gender
+    - distribution of age
+    - symptom frequency
+    - differences by gender
    This stage helped identify which messages the visuals should communicate. 
 
 4. Model-based visualization 
    Models were developed, trained and tested. Visuals were created using outputs from predictive models.
-     -logistic regression to estimate diabetes probability by age
+     -logistic regression was used to estimate diabetes probability by age
 
      ![alt text](image.png)
 
@@ -170,7 +171,7 @@ Libraries Used:
 
 
 
-     -feature importance visuals from machine learning models (explainability)
+     -feature importance visuals from machine learning models ( Random Forest and Logistic Regression)
 
       ![alt text](image-1.png)
 
@@ -182,12 +183,11 @@ Libraries Used:
 
       
 5. Visualization Design
-  Visualization design
-  Once the patterns are known, we chose the chart type that best fits the message.
-   -line graphs for age vs diabetes risk
-   -bar graph for comparing gender, age and symptoms
-   -top predictors
 
+  Once the patterns were known, we chose the chart type that best fits the message.
+   - line graphs for age vs diabetes risk
+   - bar graph for comparing gender, age and symptoms
+   
 
 6. Communication
    After generating the charts, the final step was to decide how to communicate the message to the intended audience.
@@ -212,46 +212,30 @@ Libraries Used:
 
 ### Week 1
 
-**Day 1 — February 24**  
-- Meet team  
-- Review dataset  
-- Discuss research problem  
+| Day | Date | Activities |
+|----|----|----|
+| Day 1 | Feb 24 | Meet team, review dataset, discuss research problem |
+| Day 2 | Feb 25 | Review additional datasets and discuss real-world applications |
+| Day 3 | Feb 26 | Complete first draft of README, confirm research questions, determine next steps |
 
-**Day 2 — February 25**  
-- Review additional datasets  
-- Discuss real-world applications  
+### Weekend Work
 
-**Day 3 — February 26**  
-- Complete first draft of README  
-- Confirm research questions  
-- Determine next steps  
-
-**Weekend Work**
-
-- Hema & Shafeeza: visualization, modelling, cleaning  
-- Patricia & Brianna: README and business case  
-- Hema: financial KPIs  
-- Group: research health visualizations  
-- Review K-means applicability  
-
----
+| Team Members | Tasks |
+|--------------|------|
+| Hema & Shafeeza | Visualization, modeling, and data cleaning |
+| Patricia & Brianna | README writing and business case |
+| Hema | Financial KPIs development |
+| Group | Research healthcare visualizations |
+| Group | Review applicability of K-Means clustering |
 
 ### Week 2
 
-**Day 4 — March 3**  
- Review the different visuals each of us created and which ones seems to address our needs of simplicity and call to action 
- Review the contents of the Flyer 
-
-**Day 5 — March 4**  
-Review and finalise the Visualization
-Review the Flyer and make required changes  
-
-**Day 6 — March 5**  
-- Prepare PowerPoint presentation 
-- Align on final presentation  
-- Dry run  
-
-**Final Presentation — March 7**
+| Day | Date | Activities |
+|----|----|----|
+| Day 4 | Mar 3 | Review visualizations created by team members and evaluate simplicity and call-to-action. Review flyer content |
+| Day 5 | Mar 4 | Finalize visualizations and update flyer |
+| Day 6 | Mar 5 | Prepare PowerPoint presentation, align on final presentation, conduct dry run |
+| Final Presentation | Mar 7 | Present final project |
 
 ---
 
@@ -277,7 +261,7 @@ Mitigation: We will report the gender distribution transparently, use proportion
 
 ## Key Results & Findings
 
-Key results
+**Key results**
 
 1. Logistic Regression performed much better than Decision Tree
 
@@ -290,37 +274,35 @@ This suggests Logistic Regression model was far more reliable and better calibra
 2. Age was an important risk factor
 A big part of our project focused on Age vs Predicted Diabetes Risk, and the modeling showed that:
 
-diabetes risk tends to increase with age
+ - diabetes risk tends to increase with age
 
-ages 40+ are a meaningful screening group
+ - ages 40+ are a meaningful screening group
 
-ages 50+ appear to fall into a higher-risk zone in your visual framing
+- ages 50+ appear to fall into a higher-risk zone in your visual framing
 
 That makes age a useful variable for public-facing prevention messaging and clinic screening visuals.
 
 3. The project identified symptom-based predictors that are clinically useful
 We explored:
 
-symptom frequency
+- symptom frequency
 
-feature importance
+- feature importance
 
-correlation/network visuals
-
-top predictors of diabetes
+- top predictors of diabetes
 
 From the structure of this diabetes dataset, the project likely showed that a combination of age plus symptom indicators provides strong predictive value. The most useful predictors are the kinds of features that can support early screening and prevention outreach.
 
 4. The dataset is suitable for prevention-oriented risk stratification
 Our analysis direction showed that the dataset can be used to:
 
-identify higher-risk adults
+- identify higher-risk adults
 
-estimate risk by age group
+- estimate risk by age group
 
-support public awareness campaigns
+- support public awareness campaigns
 
-build simple screening visuals for clinics and public healthcare settings
+- build simple screening visuals for clinics and public healthcare settings
 
 So the project is not just predictive; it is also actionable for prevention.
 
@@ -332,6 +314,7 @@ So the project is not just predictive; it is also actionable for prevention.
 - Develop an interactive dashboard or Diabetes risk screening tool to help visualize symptom-based risk patterns for patients and clinicians.
 
 ---
+## Team Videos
 
 ## References
 
