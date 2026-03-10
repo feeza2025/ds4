@@ -340,12 +340,7 @@ Shafeeza Hussain - https://www.youtube.com/watch?v=68Jf7hUWwjc
 
 Brianna Lowe - https://drive.google.com/file/d/1mI_kAOiKc7KqVXPTPS530ADaupfVytNT/view?usp=sharing
 
-- Brianna Lowe  
-- Cecilia Leung 
-- Hema Dawonauth  
-- Patricia Rabel: https://drive.google.com/file/d/1sXnIDQSSenlN2sIaFT1AQXi3KmkgTHQC/view?usp=sharing
-- Saranjeet Singh  
-- Shafeeza Hussain  
+Patricia Rabel: https://drive.google.com/file/d/1sXnIDQSSenlN2sIaFT1AQXi3KmkgTHQC/view?usp=sharing
 
 ## References
 
