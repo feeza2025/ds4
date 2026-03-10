@@ -282,8 +282,6 @@ Libraries Used:
 
 ## Key Results & Findings
 
-**Key results**
-
 1. Random Forest performed much better than Logistic Regression
 
    Logistic Regression Log Loss: 0.1535
@@ -292,18 +290,18 @@ Libraries Used:
 
    This suggests Random Forest Regression model was far more reliable and better calibrated for predicting diabetes risk on this dataset. Lower log loss is better, so this is a strong result.
 
-2. Age was an important risk factor
+2. Age was an important risk factor.
    A big part of our project focused on Age vs Predicted Diabetes Risk, and the modeling showed that:
 
   - diabetes risk tends to increase with age
 
   - ages 40+ are a meaningful screening group
 
-  - ages 50+ appear to fall into a higher-risk zone in your visual framing
+  - ages 50+ appear to fall into a higher-risk zone in the visual framing
 
   That makes age a useful variable for public-facing prevention messaging and clinic screening visuals.
 
-3. The project identified symptom-based predictors that are clinically useful
+3. The project identified symptom-based predictors that are clinically useful.
    We explored:
 
   - symptom frequency
@@ -314,7 +312,7 @@ Libraries Used:
 
   From the structure of this diabetes dataset, the project likely showed that a combination of age plus symptom indicators provides strong predictive value. The most useful predictors are the kinds of features that can support early screening and prevention outreach.
 
-4. The dataset is suitable for prevention-oriented risk stratification
+4. The dataset is suitable for prevention-oriented risk stratification.
    Our analysis direction showed that the dataset can be used to:
 
   - identify higher-risk adults
@@ -336,6 +334,11 @@ Libraries Used:
 
 ---
 ## Team Videos
+Hema Dawonauth - https://youtu.be/DPEAFrfper4
+
+Shafeeza Hussain - https://www.youtube.com/watch?v=68Jf7hUWwjc
+
+Brianna Lowe - https://drive.google.com/file/d/1mI_kAOiKc7KqVXPTPS530ADaupfVytNT/view?usp=sharing
 
 - Brianna Lowe  
 - Cecilia Leung 
